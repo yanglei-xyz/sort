@@ -43,10 +43,11 @@ public class SorterTest {
 	 * @return Integer类型数组
 	 */
 	protected static Integer[] createArray() {
+		int maxNumber = arrayLength * 10 - 1;
 		Random random = new Random();
 		Integer[] array = new Integer[arrayLength];
 		for (int i = 0; i < arrayLength; i++) {
-			array[i] = random.nextInt(99);
+			array[i] = random.nextInt(maxNumber);
 		}
 		return array;
 	}
